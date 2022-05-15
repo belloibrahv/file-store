@@ -9,7 +9,8 @@ body {
 }
 
 .login-box-inner {
-  margin: 2rem 5rem;
+  background-color: #eff3f6;
+  margin: 4rem 5rem 0;
   padding: 2rem 5rem;
   border: solid 1px rgb(240, 232, 232);
   border-radius: 20px;
@@ -107,4 +108,27 @@ input:focus {
 }
 .cra-btn {
   background-color: #fff;
+}
+
+.forgot-pass-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.remember-me {
+  display: flex;
+  line-height: 35px;
+}
+
+input[type='checkbox'] {
+  width: 14px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.forgot-pwd {
+  /* line-height: 30px; */
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }

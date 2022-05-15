@@ -21,7 +21,9 @@ const Login = () => {
             </p>
 
             <div className="login-box-wrappe">
-              <form>
+              <form onClick={() => {
+                console.log('Submitted')
+              }}>
                 <div className="email-box">
                   <FontAwesomeIcon className='font-awesome' icon={faEnvelope} />
                   <div className='right-side-input'>
@@ -36,6 +38,15 @@ const Login = () => {
                     <input type="password" name='password' required/>
                   </div>
                 </div>
+
+                <div className='forgot-pass-box'>
+                  <div className='remember-me'>
+                    <input type="checkbox" name="remenber-me"/> 
+                    <div>Remember Me</div>
+                  </div>
+                    <a className='forgot-pwd'>Forget Password?</a>
+                </div>
+
                 <div className='login-cra-btn'>
                   <button type='button' className='btn login-btn'>login now</button>
                   <button type='button' className='btn cra-btn'>create account</button>
