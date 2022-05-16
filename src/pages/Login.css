@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap');
 
-
 body {
   background-color: #f4f7f6;
   font-family: 'Roboto Flex', sans-serif;
@@ -115,21 +114,17 @@ input[type='checkbox'] {
   width: 14px;
   margin-right: 5px;
   cursor: pointer;
-  border: 5px solid red;
-  background-color: red;
 }
 .forgot-pwd {
   /* line-height: 30px; */
   text-decoration: none;
   color: #000;
   cursor: pointer;
-
 }
 
 
 .login-cra-btn {
   display: flex;
-  justify-content: space-between;
   border: none;
 }
 .btn {
@@ -147,5 +142,54 @@ input[type='checkbox'] {
 }
 .cra-btn {
   background-color: #fff;
+  cursor: pointer;
+  margin-left: 2rem;
 }
 
+@media (max-width: 1255px) {
+  .left-img-box {
+    padding-top: 100px;
+    text-align: center;
+    width: 43%;
+  }
+  
+  .right-login-box {
+    margin-top: -10em;
+    width: 37%;
+  } 
+}
+
+@media (max-width: 1188px){
+  .flexed-inner-box {
+    align-items: left;
+    justify-content: space-between;
+    margin-top: 1.7em;
+   }
+   
+    .left-img-box {
+      text-align: left;
+      margin-top: 15rem;
+      width: 30%;
+   }
+   
+   img {
+    width: 100%;
+   }
+
+   .right-login-box {
+     /* margin-top: -10em; */
+     width: 50%;
+   }
+   
+}
+@media (max-width: 805px) {
+ .left-img-box {
+   display: none;
+ }
+ 
+ .right-login-box {
+   margin: 5rem 2rem 0;
+   width: 75%;
+   align-items: center;
+ }
+}

@@ -49,7 +49,7 @@ const Login = () => {
 
                 <div className='login-cra-btn'>
                   <button type='button' className='btn login-btn'>login now</button>
-                  <button type='button' className='btn cra-btn'>create account</button>
+                  <a className='btn cra-btn'>create account</a>
                 </div>
               </form>
             </div>
