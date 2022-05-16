@@ -8,7 +8,7 @@ const Login = () => {
     <div className='login-box-wrapper'>
 
       <div className='login-box-inner'>
-        <div className='top-header-logo'>FileStore</div>
+        <div className='top-header-logo'>filestore</div>
         
         <div className='flexed-inner-box'>
           <div className='left-img-box'>

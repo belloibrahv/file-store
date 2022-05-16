@@ -1,93 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap');
+
+
 body {
   background-color: #f4f7f6;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 1rem;
 }
 
 .top-header-logo {
   color: blue;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.3em;
 }
 
 .login-box-inner {
   background-color: #f9fafc;
-  margin: 4rem 5rem 0;
-  padding: 2rem 5rem;
-  border: solid 1px rgb(240, 232, 232);
   border-radius: 20px;
+  box-shadow: -4px -5px 22px 12px rgba(238,239,243,0.75);
+  -webkit-box-shadow: -4px -5px 22px 12px rgba(238,239,243,0.75);
+  -moz-box-shadow: -4px -5px 22px 12px rgba(238,239,243,0.75);
   height: 600px;
+  margin: 3rem auto 0;
+  padding: 2rem 5rem;
+  width: 80%;
 }
 
 .flexed-inner-box {
+ align-items: center;
  display: flex;
  justify-content: space-around;
- align-items: center;
+ margin-top: 1.5em;
 }
 
 .left-img-box {
-  flex: 95%;
   padding-top: 100px;
   text-align: center;
+  width: 48%;
 }
 
 .right-login-box {
-  margin-top: -10rem;
+  margin-top: -10em;
+  width: 32%;
 }
 
 .welcome {
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 p {
+  margin-bottom: 2em;
   font-size: .9rem;
-  margin-bottom: 50px;
 }
 
 .login-box-wrappe {
-  /* background-color: #ccc; */
-  height: 150px;
-  border-radius: 20px;
+  border-radius: 1em;
+  height: 7.5em;
 }
 .email-box {
-  display: flex;
+  border-radius: .5em;
+  border-radius: .5em .5em 0 0;
   background-color: #eef2f4;
-  height: 70px;
-  border-radius: 10px;
-  border-radius: 10px 10px 0 0;
+  display: flex;
+  height: 3.5em;
 }
 .password-box {
-  display: flex;
   background-color: #fff;
-  height: 70px;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 .5em .5em;
+  display: flex;
+  height: 3.5em;
 }
 .right-side-input {
+  align-items: left;
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  align-items: left;
   line-height: 2rem;
+  margin-left: 1.5em;
 }
 .font-awesome {
-  margin: 20px 0 0 20px; 
-  font-size: 2rem;
   color: rgba(218, 179, 179, 0.733);
+  font-size: 1.6rem;
+  margin: 1rem 0 0 1rem; 
 }
 label {
   font-size: .8rem;
 }
 input {
   border: solid 0 transparent;
-  width: 310px;
-  height: 30px;
   background-color: transparent;
+  height: 2.5em;
+  width: 15.5em;
 }
 input:hover,
 input:active,
 input:focus {
-  outline: none;
   background-color: transparent;
+  outline: none;
 }
+
+.forgot-pass-box {
+  display: flex;
+  font-size: .9rem;
+  justify-content: space-between;
+  line-height: 2.7em;
+  padding-top: .4em;
+}
+
+.remember-me {
+  display: flex;
+  line-height: 2.6rem;
+}
+
+input[type='checkbox'] {
+  width: 14px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 5px solid red;
+  background-color: red;
+}
+.forgot-pwd {
+  /* line-height: 30px; */
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+
+}
+
+
 .login-cra-btn {
   display: flex;
   justify-content: space-between;
@@ -110,31 +149,3 @@ input:focus {
   background-color: #fff;
 }
 
-.forgot-pass-box {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.remember-me {
-  display: flex;
-  line-height: 35px;
-}
-
-input[type='checkbox'] {
-  width: 14px;
-  margin-right: 5px;
-  cursor: pointer;
-}
-.forgot-pwd {
-  /* line-height: 30px; */
-  text-decoration: none;
-  color: #000;
-  cursor: pointer;
-}
-
-/* .check-box {
-
-  color: #53c76e;
-  border-radius: 20%;
-} */
